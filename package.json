@@ -1,0 +1,21 @@
+{
+  "name": "booking-service-spec",
+  "version": "1.0.0",
+  "description": "TypeSpec specification for Booking Service API",
+  "type": "module",
+  "scripts": {
+    "compile": "tsp compile spec/booking.tsp --emit @typespec/openapi3",
+    "watch": "tsp compile spec/booking.tsp --emit @typespec/openapi3 --watch",
+    "test:e2e": "cd e2e && npx playwright test",
+    "test:e2e:ui": "cd e2e && npx playwright test --ui",
+    "test:e2e:headed": "cd e2e && npx playwright test --headed"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@typespec/http": "latest",
+    "@typespec/rest": "latest",
+    "@typespec/openapi3": "latest",
+    "@typespec/compiler": "latest",
+    "typescript": "latest"
+  }
+}
