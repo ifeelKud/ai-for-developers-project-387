@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       id-token: write
+      contents: write
+      issues: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -25,4 +27,4 @@ jobs:
         env:
           OPENCODE_ZEN_API_KEY: ${{ secrets.OPENCODE_ZEN_API_KEY }}
         with:
-          model: opencode/qwen3.6-plus
+          model: qwen3.6-plus
