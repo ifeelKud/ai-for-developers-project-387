@@ -25,4 +25,4 @@ jobs:
         env:
           OPENCODE_ZEN_API_KEY: ${{ secrets.OPENCODE_ZEN_API_KEY }}
         with:
-          model: zen/qwen3.6-plus
+          model: opencode/qwen3.6-plus
